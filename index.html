@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0f">
+  <meta name="description" content="RealPilot 驭真科技：让人类驾驶机器人，让每一次驾驶都驶向真实。">
+  <title>RealPilot / 驭真科技</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" id="progress"></div>
+
+  <header class="site-nav">
+    <a class="brand" href="#top" aria-label="RealPilot 首页">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span>REAL<span>PILOT</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#thesis">MISSION</a>
+      <a href="#system">SYSTEM</a>
+      <a href="#flywheel">FLYWHEEL</a>
+      <a href="#roadmap">ROADMAP</a>
+    </nav>
+    <a class="nav-cta" href="#contact"><span>进入驾驶舱</span><b>↗</b></a>
+    <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="starfield" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-a" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-b" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="signal"></span> REALPILOT / SYSTEM ONLINE <em>01—07</em></div>
+        <h1 id="hero-title">驾驶梦想<br><strong>驶向真实</strong></h1>
+        <p class="hero-sub">我们让人类驾驶机器人。</p>
+        <p class="hero-desc">从机甲游戏出发，把每一次意图、每一次动作、每一次结果，汇入一个真正可进化的具身智能系统。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#system">探索系统 <span>↗</span></a>
+          <a class="button button-ghost" href="#thesis">了解 RealPilot <span>↓</span></a>
+        </div>
+        <div class="hero-meta"><span>REAL PHYSICS / REAL AGENCY</span><span>RL · SIM · ROBOTICS</span><span>SHENZHEN / BEIJING</span></div>
+      </div>
+      <div class="hero-art" aria-label="RealPilot 机甲概念视觉">
+        <div class="art-halo"></div>
+        <div class="art-scan"></div>
+        <img src="assets/gundam.png" alt="机甲概念图" class="hero-mecha">
+        <div class="mecha-label label-a"><span>UNIT / 00</span><b>BODY IN MOTION</b></div>
+        <div class="mecha-label label-b"><span>RUNTIME STATUS</span><b>STABLE · 50HZ</b></div>
+        <div class="target target-a"></div><div class="target target-b"></div>
+      </div>
+      <div class="hero-side-note">THE NEXT DRIVER<br><span>IS HUMAN</span></div>
+      <div class="scroll-cue"><span></span>SCROLL TO INITIALIZE</div>
+    </section>
+
+    <section class="section thesis" id="thesis">
+      <div class="section-intro reveal">
+        <div class="section-index">01 / MISSION</div>
+        <h2>机器人已经诞生。<br><span>驾驶它的方式，还没有。</span></h2>
+        <p>今天的机器人仍然停留在“前方向盘时代”：关节映射、遥操作、互不通用的控制器。RealPilot 把驾驶员的意图，变成机器人真正理解的动作。</p>
+      </div>
+      <div class="thesis-cards">
+        <article class="thesis-card reveal"><span class="card-no">01</span><div class="card-icon icon-intent">⌁</div><h3>意图级控制</h3><p>从“向前走”到“完成任务”，让人负责选择，让系统负责执行。</p><span class="card-foot">INTENT → ACTION</span></article>
+        <article class="thesis-card reveal"><span class="card-no">02</span><div class="card-icon icon-physics">◈</div><h3>真实物理</h3><p>游戏、仿真、真机共用一套可验证的物理和策略语言。</p><span class="card-foot">SIM → REAL</span></article>
+        <article class="thesis-card reveal"><span class="card-no">03</span><div class="card-icon icon-learn">↻</div><h3>持续进化</h3><p>每一次驾驶都带着结果回家，成为下一次动作的燃料。</p><span class="card-foot">PLAY → DATA → BETTER</span></article>
+      </div>
+    </section>
+
+    <section class="section system" id="system">
+      <div class="section-topline reveal"><div class="section-index">02 / SYSTEM</div><span>Z.E.R.O. SYSTEM / TECHNICAL FILE</span></div>
+      <div class="system-heading reveal"><h2>一副方向盘，<br><span>跨越每一种本体。</span></h2><p>RealPilot Runtime 是机器人的驾驶 OS：给它一个统一意图入口，把感知、决策和动作组织成可迁移的驾驶能力。</p></div>
+      <div class="system-layout">
+        <div class="zero-panel reveal">
+          <div class="zero-top"><span>Z.E.R.O.</span><small>ZONAL EXECUTION &amp; RESPONSE ORCHESTRATOR</small></div>
+          <div class="zero-core"><div class="core-ring ring-1"></div><div class="core-ring ring-2"></div><div class="core-ring ring-3"></div><div class="core-dot"></div><span class="core-caption">DRIVER<br>INTENT</span></div>
+          <div class="zero-node node-a"><b>01</b><span>感知融合</span><small>ZERO.SENSOR</small></div>
+          <div class="zero-node node-b"><b>02</b><span>意图解析</span><small>AGENTIC API</small></div>
+          <div class="zero-node node-c"><b>03</b><span>安全闭环</span><small>ZERO.AMBAC</small></div>
+          <div class="zero-line line-a"></div><div class="zero-line line-b"></div><div class="zero-line line-c"></div>
+          <div class="zero-bottom"><span>System 2 / 人类做选择</span><strong>→</strong><span>System 0–1 / ZERO 做执行</span></div>
+        </div>
+        <div class="layers reveal">
+          <div class="layer-intro">THE STACK <span>策略文件三端通用</span></div>
+          <article class="layer"><span class="layer-no">L3</span><div><h3>意图层</h3><p>任务级指令 → 意图解析 → 策略调度</p></div><span class="layer-rate">AGENTIC API</span></article>
+          <article class="layer active"><span class="layer-no">L2</span><div><h3>策略层</h3><p>运控策略推理，基模权重与技能库协同</p></div><span class="layer-rate">50 HZ</span></article>
+          <article class="layer"><span class="layer-no">L1</span><div><h3>物理层</h3><p>接触真值、平衡、防摔、安全闭环</p></div><span class="layer-rate">500 HZ—2 KHZ</span></article>
+          <article class="layer"><span class="layer-no">L0</span><div><h3>宿主层</h3><p>Unreal Engine / MuJoCo / Omniverse</p></div><span class="layer-rate">CROSS-BODY</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bridge">
+      <div class="bridge-visual reveal"><img src="assets/bodycam.png" alt="真实世界的驾驶视角"><div class="bridge-stamp">FIELD<br>TEST<br><b>LIVE</b></div><div class="bridge-caption">FROM SCREEN<br>TO STEEL</div></div>
+      <div class="bridge-copy reveal"><div class="section-index">03 / THE BRIDGE</div><h2>游戏不是终点。<br><span>是进入真实世界的第一步。</span></h2><p>《机甲驾照》让玩家先在真实物理里学会驾驶；PilotForge 让动作成为内容；PilotBench 让每一种本体都能在同一张榜单上被验证。</p><div class="bridge-stats"><div><strong>01</strong><span>驾驶体验</span></div><div><strong>02</strong><span>数据资产</span></div><div><strong>03</strong><span>真机标准</span></div></div><a class="inline-link" href="#flywheel">查看飞轮如何运转 <span>↗</span></a></div>
+    </section>
+
+    <section class="section flywheel" id="flywheel">
+      <div class="section-topline reveal"><div class="section-index">04 / FLYWHEEL</div><span>ONE LOOP / FOUR PRODUCTS</span></div>
+      <div class="flywheel-heading reveal"><h2>每一次游玩，<br><span>都在让机器人变得更好。</span></h2><p>玩家获得更好的驾驶体验，机器人获得更丰富的意图—执行数据，RealPilot 获得跨本体的系统壁垒。</p></div>
+      <div class="wheel-wrap reveal">
+        <div class="wheel"><div class="wheel-orbit"></div><div class="wheel-center"><span>REAL</span><b>FLYWHEEL</b><small>PLAY / LEARN / PILOT</small></div><div class="wheel-node wheel-1"><b>01</b><strong>机甲驾照</strong><small>GAME / ENTRY</small></div><div class="wheel-node wheel-2"><b>02</b><strong>PilotData</strong><small>DATA / ASSET</small></div><div class="wheel-node wheel-3"><b>03</b><strong>Runtime</strong><small>OS / ENGINE</small></div><div class="wheel-node wheel-4"><b>04</b><strong>PilotBench</strong><small>STANDARD / PROOF</small></div></div>
+        <div class="wheel-aside"><div class="quote-mark">“</div><p>你玩的每一局，都会成为真实机器人下一次动作的起点。</p><span>— THE DRIVER'S PROMISE</span></div>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="roadmap">
+      <div class="section-intro reveal"><div class="section-index">05 / ROADMAP</div><h2>从第一个动作，<br><span>到下一代驾驶标准。</span></h2><p>先让驾驶发生，再让能力沉淀，最后让标准扩散。每一个阶段，都有真实的机器人在场。</p></div>
+      <div class="timeline reveal"><div class="timeline-line"></div><article class="timeline-item done"><span class="timeline-mark">01</span><div><span class="time">NOW / ONLINE</span><h3>真机 Benchmark</h3><p>乒乓真机链路稳定运行，跨本体驾驶能力开始被同一套事实验证。</p></div></article><article class="timeline-item"><span class="timeline-mark">02</span><div><span class="time">NEXT / BUILD</span><h3>机甲驾照 EA</h3><p>把真实物理做成任何人都能上手的驾驶体验，让第一批驾驶员进入系统。</p></div></article><article class="timeline-item"><span class="timeline-mark">03</span><div><span class="time">THEN / SCALE</span><h3>数据与工具放量</h3><p>PilotData、Runtime、PilotForge 形成开放生态，驾驶能力开始跨越本体。</p></div></article><article class="timeline-item"><span class="timeline-mark">04</span><div><span class="time">FUTURE / STANDARD</span><h3>成为驾驶标准</h3><p>让机器人拥有统一方向盘，让每一个人都能成为机器人的驾驶员。</p></div></article></div>
+    </section>
+
+    <section class="contact" id="contact"><div class="contact-glow"></div><div class="contact-inner reveal"><div class="eyebrow"><span class="signal"></span> FINAL APPROACH / OPEN INVITATION</div><h2>下一站，<br><span>由你来驾驶。</span></h2><p>我们正在寻找相信这件事的人：机器人不应该只是被观看的机器，也应该是人类可以亲手驾驶的未来。</p><a class="button button-primary" href="https://github.com/real-pilot" target="_blank" rel="noreferrer">访问 GitHub 组织 <span>↗</span></a></div><div class="contact-coords">31°14' N / 121°29' E<br><span>REALPILOT / HUMAN + MACHINE</span></div></section>
+  </main>
+
+  <footer><div class="footer-brand"><span class="brand-mark"><i></i><i></i><i></i></span> REALPILOT</div><p>驭真科技 · REALPILOT © 2026</p><div class="footer-status"><i></i> SYSTEMS NOMINAL</div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
